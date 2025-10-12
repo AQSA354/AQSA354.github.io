@@ -330,6 +330,18 @@ header nav ul li a:hover::after {
   margin-top: auto;
 }
 
+/* Glow line at the top of footer */
+.main-footer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px; /* thickness */
+  background: linear-gradient(90deg, #00ffc3, #7f5af0); /* gradient color */
+  box-shadow: 0 0 12px #00ffc3, 0 0 15px #7f5af0; /* glow effect */
+  border-radius: 2px;
+  margin-bottom: 20px; /* space between line and footer content */
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;
