@@ -598,7 +598,7 @@ header nav ul li a:hover::after {
 .certificate img {
   width: 100%;
   max-width: 500px;
-  border: 3px solid #1f7aec;
+  border: 2px solid #1f7aec;
   border-radius: 12px;
   margin-top: 1rem;
   box-shadow: 0 0 15px rgba(31, 122, 236, 0.3);
