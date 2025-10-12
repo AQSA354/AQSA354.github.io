@@ -20,6 +20,19 @@ body {
     font-size: 16px;
 }
 
+.certificate-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.certificate-img:hover {
+  transform: scale(1.03);
+}
+
 /* ============================
    Header Styling
    - Sticky header with animated glowing effect
