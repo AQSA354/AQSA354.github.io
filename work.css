@@ -624,3 +624,16 @@ header nav ul li a:hover::after {
 }
 
 
+/* Target Redmi Note 10 Pro specifically */
+@media screen and (min-width: 410px) and (max-width: 415px) {
+  .youtube-container {
+    max-width: 100%; /* allow full width */
+    padding-top: 56.25%; /* maintain 16:9 ratio */
+  }
+
+  .youtube-container iframe {
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow: 0 0 10px rgba(31, 122, 236, 0.3);
+  }
+}
