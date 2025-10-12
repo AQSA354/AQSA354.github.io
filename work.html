@@ -7,72 +7,103 @@
 
   <link rel="stylesheet" href="work.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <!-- AOS Animation -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="header-container">
-<button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-  <i class="fas fa-bars"></i>
-</button>      <nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
         <ul id="navList">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="achievements.html">Achievements</a></li>
           <li><a href="work.html" class="active">Work Experience</a></li>
-          <!-- Removed Contact -->
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Main Content -->
- <main class="work-experience">
-  <section class="experience-section" data-aos="fade-up">
-<div class="work-heading">
-  <h2>Work Experience</h2>
-  <div class="glow-line"></div>
-</div>
+  <main class="work-experience">
 
-    <div class="experience-grid">
-      <!-- Left Column: Video -->
-      <div class="experience-media">
-       <h2 style="color: #1f7aec;">Gohar Al Gillani Website Project</h2>
+    <!-- 1️⃣ Gohar Al Gillani Website Project -->
+    <section class="experience-section" data-aos="fade-up">
+      <div class="work-heading">
+        <h2>Work Experience</h2>
+        <div class="glow-line"></div>
+      </div>
 
-        <p>
-          Worked in a collaborative team to design and develop a corporate website for <strong>Gohar Al Gillani</strong> using <em>WordPress</em>. 
-          Responsibilities included layout design, theme customization, and mobile optimization.
-        </p>
+      <div class="experience-grid">
+        <div class="experience-media">
+          <h2 style="color: #1f7aec;">Gohar Al Gillani Website Project</h2>
+          <p>
+            Worked in a collaborative team to design and develop a corporate website for <strong>Gohar Al Gillani</strong> using <em>WordPress</em>. 
+            Responsibilities included layout design, theme customization, and mobile optimization.
+          </p>
+          <div class="youtube-container">
+            <iframe 
+              src="https://www.youtube.com/embed/9qBOJ3Q8l34" 
+              frameborder="0" 
+              allowfullscreen
+              title="Gohar Al Gillani Website Preview">
+            </iframe>
+          </div>
+        </div>
 
-        <div class="youtube-container">
-          <iframe 
-            src="https://www.youtube.com/embed/9qBOJ3Q8l34" 
-            frameborder="0" 
-            allowfullscreen
-            title="Gohar Al Gillani Website Preview">
-          </iframe>
+        <div class="certificate-showcase" data-aos="zoom-in">
+          <h3 style="color: #1f7aec;">Certificate of Participation</h3>
+          <img src="certificate.jpg" alt="Gohar Al Gillani Certificate" />
         </div>
       </div>
+    </section>
 
-      <!-- Right Column: Certificate -->
-      <div class="certificate-showcase" data-aos="zoom-in">
-       <h3 style="color: #1f7aec;">Certificate of Participation</h3>
-        <img src="certificate.jpg" alt="Gohar Al Gillani Certificate" />
-        <a href="certificate.jpg" download class="btn-download">Download Certificate</a>
+    <!-- 2️⃣ Web Development Intern -->
+    <section class="experience-section" data-aos="fade-up">
+      <div class="experience-grid">
+        <div class="experience-media">
+          <h2 style="color: #1f7aec;">Web Development Intern</h2>
+          <p><strong>Training Program | 5 August 2025 – 5 September 2025</strong></p>
+          <p>
+            Successfully completed training in <strong>Web Development</strong>.  
+            Gained hands-on experience in HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js, MongoDB, and GitHub.
+          </p>
+        </div>
+
+        <div class="certificate-showcase" data-aos="zoom-in">
+          <h3 style="color: #1f7aec;">Certificate of Completion</h3>
+          <img src="pic15.png" alt="Web Development Certificate" />
+        </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
+    <!-- 3️⃣ Digital Marketing Intern -->
+    <section class="experience-section" data-aos="fade-up">
+      <div class="experience-grid">
+        <div class="experience-media">
+          <h2 style="color: #1f7aec;">Digital Marketing Intern</h2>
+          <p><strong>Training Program | 5 August 2025 – 5 September 2025</strong></p>
+          <p>
+            Successfully completed training in <strong>Digital Marketing</strong>.  
+            Acquired skills in WordPress, SEO (on-page & off-page), Google Ads, content creation, keyword research, and social media marketing.
+          </p>
+        </div>
 
+        <div class="certificate-showcase" data-aos="zoom-in">
+          <h3 style="color: #1f7aec;">Certificate of Completion</h3>
+          <img src="pic16.png" alt="Digital Marketing Certificate" />
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="main-footer">
@@ -90,9 +121,9 @@
           <li><a href="work.html">Work Experience</a></li>
         </ul>
       </div>
-       <div class="footer-contact">
+      <div class="footer-contact">
         <h3>Contact</h3>
-        <p>Email: <a href="aqsabathspa.ae@gmail.com">aqsabathspa.ae@gmail.com</a></p>
+        <p>Email: <a href="mailto:aqsabathspa.ae@gmail.com">aqsabathspa.ae@gmail.com</a></p>
         <p>Phone Number: +971 56 776 8651</p>
       </div>
     </div>
@@ -101,7 +132,6 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="script.js"></script>
   <script>
     AOS.init();
