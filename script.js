@@ -1,5 +1,5 @@
 // Typing effect
-const textArray = ["Creative Computing Student", "Web Developer", "Future Cybersecurity Expert"];
+const textArray = ["Creative Computing Graduate", "Web Developer", "Future Cybersecurity Expert"];
 let i = 0, j = 0, isDeleting = false, currentText = "";
 
 function type() {
