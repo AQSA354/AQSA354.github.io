@@ -553,23 +553,19 @@ header nav ul li a:hover::after {
   box-shadow: 0 6px 25px rgba(31, 122, 236, 0.3);
 }
 
-/* Center the YouTube video perfectly */
+/* Base responsive video container */
 .youtube-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1.8rem auto;
-  width: 100%;
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
+  width: 100%;
+  max-width: 700px; /* desktop max width */
+  margin: 1.8rem auto;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
 }
 
 .youtube-container iframe {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   width: 100%;
   height: 100%;
   border-radius: 12px;
@@ -577,9 +573,15 @@ header nav ul li a:hover::after {
   box-shadow: 0 0 15px rgba(31, 122, 236, 0.3);
 }
 
-/* Optional: adjust max-width on very small screens */
+/* Mobile tweaks for smaller screens, including Redmi Note 10 Pro */
 @media screen and (max-width: 480px) {
+  .youtube-container {
+    max-width: 95%;      /* almost full width on mobile */
+    padding-top: 56.25%; /* maintain 16:9 ratio */
+  }
+
   .youtube-container iframe {
+    height: auto;        /* let iframe scale naturally */
     border-radius: 8px;
     border-width: 1px;
     box-shadow: 0 0 10px rgba(31, 122, 236, 0.3);
@@ -624,16 +626,3 @@ header nav ul li a:hover::after {
 }
 
 
-/* Target Redmi Note 10 Pro specifically */
-@media screen and (min-width: 410px) and (max-width: 415px) {
-  .youtube-container {
-    max-width: 100%; /* allow full width */
-    padding-top: 56.25%; /* maintain 16:9 ratio */
-  }
-
-  .youtube-container iframe {
-    border-radius: 10px;
-    border-width: 1px;
-    box-shadow: 0 0 10px rgba(31, 122, 236, 0.3);
-  }
-}
